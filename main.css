@@ -68,9 +68,23 @@ img {
     margin-right: auto;
 }
 
-.name-headline {
-  background-color: red;
+.name-card {
+  background-color: rgb(200, 40, 30, 0.2);
 }
-.main-information {
-  background-color: aqua;
+.first-line {
+  background-color: rgb(20, 180, 80, 0.2);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.second-line {
+  background-color: rgb(100,40,200,0.3);
+  margin-bottom: 20px;
+}
+.third-line {
+  background-color: rgb(0, 130, 150,0.3);
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Shippori Mincho', serif;
 }
