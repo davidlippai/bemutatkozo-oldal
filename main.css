@@ -65,7 +65,8 @@ p {
 img {
     display: block;
     margin: auto;
-    margin-bottom: 80px;
+    margin-left: 105px;
+    padding: 2px;
 
 }
 
@@ -76,7 +77,7 @@ img {
   margin-bottom: 20px;
   margin-top: 20px;
   letter-spacing: 2px;
-  margin-left: -30px;
+  margin-left: 105px;
   color: dimgrey;
   font-size: 28px;
 }
@@ -143,4 +144,16 @@ li {
 
 .name-headline {
   color: white;
+    font-size: 30px;
+  margin-bottom: 30p;
+  margin-left: +310px;
+  text-align: justify;
+}
+
+.profession {
+  text-align: justify
+}
+
+.profession, .age, .languages {
+  font-size: 16px;
 }
