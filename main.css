@@ -1,3 +1,5 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,7 +21,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -42,118 +44,40 @@ table {
 	border-spacing: 0;
 }
 
-img {
-  height: auto;
-  width: 180px;
+.main-header {
+	background-color: rgba(255, 248, 53, .3);
 }
 
-.container {
-    width: 100%;
-    height: 100%;
+.primary-content {
+	background-color: rgba(140, 96, 255, .3);
 }
 
-h4 {
-    text-align: center;
-  font-size: 40px;
-}
-
-p {
-    text-align: center;
-  font-size: 20px;
-}
-
-img {
-    display: block;
-    margin: auto;
-    margin-left: 105px;
-    padding: 2px;
-
-}
-
-.name-card {
-  ackground-color: rgb(200, 40, 30, 0.2);
-}
-.first-line {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  letter-spacing: 2px;
-  margin-left: 105px;
-  color: dimgrey;
-  font-size: 28px;
-}
-
-.my-projects:hover {
-    transform: scale(0.9);
-  transition: all 0.9s ease-in-out;
-}
-.partners:hover {
-    transform: scale(0.9);
-  transition: all 0.9s ease-in-out;
-}
-.contact:hover {
-    transform: scale(0.9);
-  transition: all 0.9s ease-in-out;
-}
-.second-line {
-  color: black;
-  margin-bottom: 20px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  line-height: 30px;
-}
-.third-line {
-  color: white;
-  margin-bottom: 20px;
+.post {
+	background-color: rgba(255, 0, 0, .3);
 }
 
 body {
-  font-family: 'Shippori Mincho', serif;
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: url('assets/hatterkep-lila.jpg')
+  font-family: 'libre baskerville', 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333;
 }
 
-#contactme {
-  margin-bottom: 20px;
-  font-size: 20px;
-  color: white;
-  }
-
-i {
-  color: rebeccapurple;
-}
-i:hover {
-  color: white;
-  transform: scale(0.9);
-  transition: all 0.5s ease-in-out;
+h1,
+h2 {
+  font-family: 'Source Serif Pro', serif;', Arial, sans-serif;
 }
 
-.links {
-  text-align: center;
+h1 {
+  font-size: 28.8px
+}
+h2 {
+  font-size: 25.6px;
+  color: #e5127d
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline;
-}
-
-.name-headline {
-  color: white;
-    font-size: 30px;
-  margin-bottom: 30p;
-  margin-left: +310px;
-  text-align: justify;
-}
-
-.profession {
-  text-align: justify
-}
-
-.profession, .age, .languages {
-  font-size: 16px;
+#main-header-p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #8c8e9b
 }
