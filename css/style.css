@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  color:  white;
+  background-color: black;
+  font-family: 'Playfair Display', serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*----------BASIC - GRID -----------*/
+
+div#wrapper {
+  display: grid;
+  max-width: 1440px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(200px, auto); 
+  grid-gap: 0.5rem;
+}
+
+
+
+/*-----------MOBIL-------------*/
+
+header {
+  grid-column: 1/13;
+  background: linear-gradient(70deg, rgb(36, 24, 201), rgb(72, 182, 167));
+  border-bottom: solid 2px rgba(255, 255, 255, 0.247);
+}
+
+div#name-and-hamMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.247);
+  box-shadow: -0.05rem  -0.25rem 1.5rem rgba(255, 255, 255, 0.185);
+}
+
+#name-and-hamMenu h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+img#profilImg {
+  width: 70%;
+  display: block;
+  margin: -6rem auto auto auto;
+  transition: all ease-in-out 0.5s;
+}
+
+img#profilImg:hover {
+  width: 72.5%;
+  transition: all ease-in-out 0.5s;
+}
+
+div#img-card {
+  border-top: solid 2px rgba(255, 255, 255, 0.247);
+  border-left: solid 2px rgba(255, 255, 255, 0.247);
+  border-right: solid 2px rgba(255, 255, 255, 0.247);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 60%;
+  margin: 7rem auto auto auto;
+  box-shadow: -0.05rem  -0.25rem 1.5rem rgba(255, 255, 255, 0.185);
+
+}
+
+/*-----------HAMBURGER MENU---------*/
+
+div#hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+span.classOfLines {
+  width: 3rem;
+  height: 0.25rem;
+}
+
+#firstLine, #secondLine, #thirdLine {
+  margin: 0.3rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+nav.menu {
+  display: none;
+}
+
+.menu ul li {
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.25rem;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 0.75rem;
+}
+
+.menu ul li a:hover {
+  text-shadow: 0.1rem 0.1rem 0.45rem white;
+}
+
+/*----------SECTION------------*/
+
+section {
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+section h2 {
+  text-align: center;
+  padding: 1rem;
+  grid-column: 1/4;
+  letter-spacing: 0.2rem;
+}
+
+section article {
+  grid-column: 1/4;
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 1rem; 
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(70deg, rgb(36, 24, 201), rgb(72, 182, 167));
+}

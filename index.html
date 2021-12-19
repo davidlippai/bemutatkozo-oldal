@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="main.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <title>David Lippai</title>
-</head>
-  <body>
-		<div class="name-card">
-			<div class="name-headline">
-				<div class="profile-picture">
-					<img src="assets/davidlippai.jpg" alt="profil-picture">
-				</div>
-				<div class="personal-data">
-					<div class="name">David Lippai</div>
-					<div class="profession">Web developer</div>
-					<div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://www.google.at/maps/place/Telfs/@47.3247578,11.0675507,13z/data=!3m1!4b1!4m5!3m4!1s0x479d1988e5037ef1:0x51f9c595d4596da7!8m2!3d47.3070652!4d11.0681692" target="_blank">Telfs,</a> Austria</div>
-				</div>
-			</div>
-			<div class="content">
-				<p class="about">Hi, nice to see You here, where You can find my important details. This is an Online Name-Card. My name is David Lippai, and as You can see, I am a web developer, singer and so much other too! I love working with <strong>HTML5,</strong> <strong>CSS3,</strong> and <strong>JavaScript. </strong>I love learning, does not matter, what is it.<br></p>
-				<p class="languages">I speak <strong>Four</strong> languages, which are:</p>
-					<ul class="speak">
-						<li class="speak">English</li>
-						<li class="speak">German</li>
-						<li class="speak">Italian</li>
-						<li class="speak">Hungarian</li>
-					</ul>
-				<p class="about">Do not hesitate to contact me, if you can imagen that We work Together.<br>
-				</p>
-				<section class="links">
-					<h2>Contact me Via:</h2>
-					<ul>
-						<li><a href="mailto:lippai28@gmail.com?cc=lippai28@gmail.com&subject=Send an E-mail"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.instagram.com/david_lippai/"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.youtube.com/c/ShawnOriginal"><i class="fa fa-2x fa-youtube-square" aria-hidden="true"></i></a></li>
-					</ul>
-				</section>
-			</div>
-		</div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.3.1.js"
+        ></script>
+        <title>David Lippai | Portfolio Page</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div id="name-and-hamMenu">
+                    <h1>David Lippai</h1>
+                    <div id="hamburgerMenu">
+                        <span class="classOfLines" id="firstLine"></span>
+                        <span class="classOfLines" id="secondLine"></span>
+                        <span class="classOfLines" id="thirdLine"></span>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="img-card">
+                    <img id="profilImg" src="img/davidlippai_profilimg.png" />
+                </div>
+            </header>
+            <section>
+                <h2>Services</h2>
+                <article id="first-article">HTML</article>
+                <article id="second-article">CSS</article>
+                <article id="third-article">javascript</article>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <article id="first-article">HTML</article>
+                <article id="second-article">CSS</article>
+                <article id="third-article">javascript</article>
+            </section>
+            <footer></footer>
+        </div>
+        <script src="app.js"></script>
+    </body>
 </html>
