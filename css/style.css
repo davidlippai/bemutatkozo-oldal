@@ -1,138 +1,249 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-html, body {
-  scroll-behavior: smooth;
-  color:  white;
-  background-color: black;
-  font-family: 'Playfair Display', serif;
+html,
+body {
+    scroll-behavior: smooth;
+    color: white;
+    font-family: "Playfair Display", serif;
+    background: url('../img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 /*----------BASIC - GRID -----------*/
 
 div#wrapper {
-  display: grid;
-  max-width: 1440px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(200px, auto); 
-  grid-gap: 0.5rem;
+    display: grid;
+    max-width: 1440px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(200px, auto);
 }
-
-
 
 /*-----------MOBIL-------------*/
 
 header {
-  grid-column: 1/13;
-  background: linear-gradient(70deg, rgb(36, 24, 201), rgb(72, 182, 167));
-  border-bottom: solid 2px rgba(255, 255, 255, 0.247);
+    grid-column: 1/13;
+    height: auto;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.247);
+
 }
 
 div#name-and-hamMenu {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.75rem;
-  border-bottom: solid 2px rgba(255, 255, 255, 0.247);
-  box-shadow: -0.05rem  -0.25rem 1.5rem rgba(255, 255, 255, 0.185);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.247);
+    box-shadow: -0.05rem -0.25rem 1.5rem rgba(255, 255, 255, 0.185);
+    background-color: rgba(0, 0, 0, 0.568);
 }
 
 #name-and-hamMenu h1 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    align-self:  center;
+    font-family: 'Oooh Baby', cursive;
 }
 
 img#profilImg {
-  width: 70%;
-  display: block;
-  margin: -6rem auto auto auto;
-  transition: all ease-in-out 0.5s;
+    width: 70%;
+    display: block;
+    margin: -6rem auto auto auto;
+    transition: all ease-in-out 0.5s;
 }
 
 img#profilImg:hover {
-  width: 72.5%;
-  transition: all ease-in-out 0.5s;
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
 }
 
 div#img-card {
-  border-top: solid 2px rgba(255, 255, 255, 0.247);
-  border-left: solid 2px rgba(255, 255, 255, 0.247);
-  border-right: solid 2px rgba(255, 255, 255, 0.247);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  width: 60%;
-  margin: 7rem auto auto auto;
-  box-shadow: -0.05rem  -0.25rem 1.5rem rgba(255, 255, 255, 0.185);
-
+    border-top: solid 2px rgba(255, 255, 255, 0.247);
+    border-left: solid 2px rgba(255, 255, 255, 0.247);
+    border-right: solid 2px rgba(255, 255, 255, 0.247);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 65%;
+    margin: 7rem auto auto auto;
+    transition: all ease-in-out 0.5s;
+    
 }
 
+div#img-card:hover {
+    background-color: rgba(0, 0, 0, 0.856);
+    transition: all ease-in-out 0.5s;
+}
 /*-----------HAMBURGER MENU---------*/
 
 div#hamburgerMenu {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 span.classOfLines {
-  width: 3rem;
-  height: 0.25rem;
+    width: 3rem;
+    height: 0.25rem;
 }
 
-#firstLine, #secondLine, #thirdLine {
-  margin: 0.3rem;
-  border-radius: 1rem;
-  background-color: white;
+#firstLine,
+#secondLine,
+#thirdLine {
+    margin: 0.3rem;
+    border-radius: 1rem;
+    background-color: white;
 }
 
 nav.menu {
-  display: none;
+    display: none;
 }
 
 .menu ul li {
-  padding: 0.5rem 0;
-  font-size: 1.2rem;
-  letter-spacing: 0.25rem;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    font-family: 'Oooh Baby', cursive;
+    letter-spacing: 0.25rem;
 }
 
 .menu ul li a {
-  color: white;
-  text-decoration: none;
-  margin-left: 0.75rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 0.75rem;
+    opacity: 0.8;
 }
 
-.menu ul li a:hover {
-  text-shadow: 0.1rem 0.1rem 0.45rem white;
+.menu ul li a#sercives-menu:hover {
+    text-shadow: 0.25rem 0.25rem 0.5rem white;
+    opacity: 1;
+}
+
+.menu ul li a#projects-menu:hover {
+    text-shadow: 0.25rem 0.25rem 0.25rem rgb(255, 47, 64);
+    opacity: 1;
+}
+
+.menu ul li a#about-me-menu:hover {
+    text-shadow: 0.25rem 0.25rem 0.25rem rgb(26, 218, 67);
+    opacity: 1;
+}
+
+.menu ul li a#contact-menu:hover {
+    text-shadow: 0.25rem 0.25rem 0.25rem rgb(204, 48, 224);
+    opacity: 1;
 }
 
 /*----------SECTION------------*/
 
 section {
-  grid-column: 1/13;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(0, 0, 0, 0.568);
 }
 
-section h2 {
-  text-align: center;
-  padding: 1rem;
-  grid-column: 1/4;
-  letter-spacing: 0.2rem;
+div#services {
+    grid-column: 1/4;
 }
 
-section article {
-  grid-column: 1/4;
-  width: 80%;
-  margin: 1rem auto;
-  border-radius: 1rem; 
-  padding: 1rem;
-  text-align: center;
-  background: linear-gradient(70deg, rgb(36, 24, 201), rgb(72, 182, 167));
+div#services h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    padding: 1rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Oooh Baby', cursive;
+}
+
+#services article {
+    grid-column: 1/4;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 0.35rem;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.247);
+    display: grid;
+    align-self: center;
+    opacity: 0.8;
+}
+
+#services h3 {
+    font-weight: 300;
+    letter-spacing: 0.25rem;
+}
+
+#services article p {
+    line-height: 1.5rem;
+    padding-top: 0.75rem;
+}
+
+#services article:hover {
+    opacity: 1;
+}
+
+article#first-article {
+    background-color: rgba(0, 0, 0, 0.568);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+article#third-article {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+article#third-article a {
+    text-decoration: none;
+    color: rgb(18, 145, 82);
+   
+}
+/*--------------------------SECOND TOPIC | Projects -----------*/
+
+div#second-topic {
+    grid-column: 1/13;
+    border-top: solid 2px rgba(255, 255, 255, 0.247);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#second-topic h2 {
+    grid-column: 1/3;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.75rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Oooh Baby', cursive;
+}
+
+article#first-project, article#second-project {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+
+
+a#go-up i{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: rgba(255, 255, 255, 0.432);
+    border: solid 1px rgba(255, 255, 255, 0.432);
+    border-radius: 50%;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+
+a#go-up i:hover {
+    opacity: 1;
+    border: solid 1px rgba(255, 255, 255, 0.637);
+    color: rgba(255, 255, 255, 0.637);
 }

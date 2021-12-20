@@ -5,8 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap"
+            rel="stylesheet"
+        />
         <link
             href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
             rel="stylesheet"
@@ -30,10 +40,14 @@
                 </div>
                 <nav class="menu">
                     <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li>
+                            <a id="services-menu" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a id="projects-menu" href="#projects">Projects</a>
+                        </li>
+                        <li><a id="about-me-menu" href="#">About me</a></li>
+                        <li><a id="contact-menu" href="#">Contact</a></li>
                     </ul>
                 </nav>
                 <div id="img-card">
@@ -41,19 +55,47 @@
                 </div>
             </header>
             <section>
-                <h2>Services</h2>
-                <article id="first-article">HTML</article>
-                <article id="second-article">CSS</article>
-                <article id="third-article">javascript</article>
-            </section>
-            <section>
-                <h2>Projects</h2>
-                <article id="first-article">HTML</article>
-                <article id="second-article">CSS</article>
-                <article id="third-article">javascript</article>
+                <div id="services">
+                    <h2>Services</h2>
+                    <article id="first-article">
+                        <h3>Website building</h3>
+                        <p id="first-paragraph">
+                            If you ask me, to build a website for you, you will
+                            get something very uniqe from me. I usually build
+                            the site from Zero, which means we can build a very
+                            individual page together.
+                        </p>
+                    </article>
+                    <article id="second-article">
+                        <h3>Design</h3>
+                        <p id="second-paragraph">
+                            I'm currently learning as a designer too, I think
+                            this is very important skill for a web-developer. Of
+                            course, we can find something very cool and modern
+                            for you too.
+                        </p>
+                    </article>
+                    <article id="third-article">
+                        <h3>Page Managment</h3>
+                        <p id="third-paragraph">
+                            If you have a page, but you are not satisfied with
+                            it, or you just want to re-build it, with a new and
+                            modern design, do not hesitate to
+                            <a href="#contact">contact</a> me.
+                        </p>
+                    </article>
+                </div>
+                <div id="second-topic">
+                    <h2 id="projects">Projects</h2>
+                    <article id="first-project">
+                        www.magyarokausztriaban.at
+                    </article>
+                    <article id="second-project">www.mindelvitte.com</article>
+                </div>
             </section>
             <footer></footer>
         </div>
+        <a href="#wrapper" id="go-up"><i class="fas fa-arrow-up"></i></a>
         <script src="app.js"></script>
     </body>
 </html>
