@@ -1,13 +1,20 @@
 /*Hamburger-Menu*/
 
 $("#hamburgerMenu").click(function(){
-  $(".menu").slideToggle("600");
+  $(".menu").slideToggle("600")
+  let firstLine = document.getElementById("firstLine");
+  let secondLine = document.getElementById("secondLine");
+  let thirdLine = document.getElementById("thirdLine");
+
+  firstLine.classList.toggle("first-line-animation");
+  secondLine.classList.toggle("second-line-animation");
+  thirdLine.classList.toggle("third-line-animation");
 })
 
 /*name typing*/
 
 let i = 0;
-let txt = 'David Lippai';
+let txt = ' David Lippai';
 let speed = 120;
 
 function typeWriter(){

@@ -66,11 +66,26 @@ div#name-and-hamMenu {
     100% {color: white;}
 }
 
+.first-line-animation {
+    transform: rotate(45deg) translateX(19px);
+    transition: all ease-in-out 0.5s;
+}
+
+.second-line-animation {
+    opacity: 0;
+}
+
+.third-line-animation {
+    transform: rotate(-45deg) translateX(19px);
+    transition: all ease-in-out 0.5s;
+}
+
+
 img#profilImg {
     width: 60%;
     display: block;
     margin: -6rem auto auto auto;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
     animation-name: imgFromNothing;
     animation-duration: 4s;
 }
@@ -113,6 +128,7 @@ div#hamburgerMenu {
 span.classOfLines {
     width: 3rem;
     height: 0.25rem;
+    transition: all ease-in-out 0.5s;
 }
 
 #firstLine,
@@ -318,7 +334,7 @@ img#siluett-profil {
 }
 
 img#siluett-profil:hover {
-    opacity: 0;
+    opacity: 0.7;
     transition: all ease-in-out 0.5s;
 }
 
