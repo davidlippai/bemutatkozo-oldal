@@ -13,6 +13,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 ul {
@@ -26,6 +27,8 @@ div#wrapper {
     max-width: 1440px;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(200px, auto);
+    margin: 0 auto;
+
 }
 
 /*-----------MOBIL-------------*/
@@ -33,15 +36,15 @@ div#wrapper {
 header {
     grid-column: 1/13;
     height: auto;
-    border-bottom: solid 2px rgba(255, 255, 255, 0.247);
-
+    border-bottom: solid 3px rgb(0, 0, 0);
+    box-shadow: -0.05rem -0.25rem 1.5rem rgba(255, 255, 255, 0.664);
 }
 
 div#name-and-hamMenu {
     display: flex;
     justify-content: space-between;
     padding: 0.75rem;
-    border-bottom: solid 2px rgba(255, 255, 255, 0.247);
+    border-bottom: solid 3px rgb(0, 0, 0);
     box-shadow: -0.05rem -0.25rem 1.5rem rgba(255, 255, 255, 0.185);
     background-color: rgba(0, 0, 0, 0.568);
 }
@@ -52,14 +55,29 @@ div#name-and-hamMenu {
     letter-spacing: 0.2rem;
     align-self:  center;
     font-family: 'Oooh Baby', cursive;
-   
+    text-shadow:  0.25rem 0.25rem 0.25rem rgb(226, 188, 15);
+    animation-name: vibrating;
+    animation-duration: 3s;
+}
+
+@keyframes vibrating {
+    0% {color: transparent;}
+    70% {color: transparent};
+    100% {color: white;}
 }
 
 img#profilImg {
-    width: 70%;
+    width: 60%;
     display: block;
     margin: -6rem auto auto auto;
     transition: all ease-in-out 0.5s;
+    animation-name: imgFromNothing;
+    animation-duration: 4s;
+}
+
+@keyframes imgFromNothing {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
 }
 
 img#profilImg:hover {
@@ -68,13 +86,13 @@ img#profilImg:hover {
 }
 
 div#img-card {
-    border-top: solid 2px rgba(255, 255, 255, 0.247);
-    border-left: solid 2px rgba(255, 255, 255, 0.247);
-    border-right: solid 2px rgba(255, 255, 255, 0.247);
+    border-top: solid 3px rgb(0, 0, 0);
+    border-left: solid 3px rgb(0, 0, 0);
+    border-right: solid 3px rgb(0, 0, 0);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.699);
-    width: 65%;
+    width: 60%;
     margin: 7rem auto auto auto;
     transition: all ease-in-out 0.5s;
     
@@ -162,7 +180,6 @@ div#services h2 {
     padding: 1rem;
     letter-spacing: 0.3rem;
     font-family: 'Oooh Baby', cursive;
-    color: rgb(226, 188, 15);
 }
 
 #services article {
@@ -212,6 +229,7 @@ article#third-article a {
 div#second-topic {
     grid-column: 1/13;
     border-top: solid 2px rgba(255, 255, 255, 0.247);
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -228,6 +246,26 @@ div#second-topic {
 article#first-project, article#second-project {
     grid-column: 1/3;
     text-align: center;
+    height: 40vh;
+    display: flex;
+    transition: all ease-in-out 0.5s;
+}
+
+article#first-project:hover {
+    border-radius: 1rem;
+    transform: rotate(2deg);
+    margin-top: -2rem;
+    box-shadow: 0.25rem -0.25rem 1rem rgb(226, 188, 15);
+    transition: all ease-in-out 0.5s;
+}
+
+
+article#second-project:hover {
+    margin-top: -2rem;
+    border-radius: 1rem;
+    transform: rotate(-2deg);
+    transition: all ease-in-out 0.5s;
+    box-shadow: 0.25rem -0.25rem 1rem rgb(226, 188, 15);
 }
 
 #second-topic article {
@@ -243,9 +281,12 @@ article#first-project, article#second-project {
     opacity: 0.8;
 }
 
-#second-topic article a {
+#second-topic a {
     text-decoration: none;
     color: rgb(226, 188, 15);
+    align-self: center;
+    font-size: 1.25rem;
+    grid-column: 1/4;
 }
 
 /*----------Third Topic - About me -------------*/
@@ -253,24 +294,45 @@ article#first-project, article#second-project {
 div#third-topic {
     grid-column: 1/13;
     border-top: solid 2px rgba(255, 255, 255, 0.247);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.247);
     text-align: center;
-    padding: 1rem;
     letter-spacing: 0.3rem;
+    font-size: 1.35rem;
     font-family: 'Oooh Baby', cursive;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+div#third-topic p {
+    margin: 1rem auto;
+    width: 80%;
+}
+
+img#siluett-profil {
+    width: 34%;
+    margin: auto 1rem;
+    position: sticky;
+    display: block;
+    bottom: 0;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+img#siluett-profil:hover {
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
 }
 
 
 
 
 
-
-
-
-
-a#go-up i{
+#go-up {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+}
+
+#go-up i{
     color: rgba(255, 255, 255, 0.432);
     border: solid 1px rgba(255, 255, 255, 0.432);
     border-radius: 50%;
@@ -278,8 +340,13 @@ a#go-up i{
     opacity: 0.8;
 }
 
-a#go-up i:hover {
+#go-up-visible {
+    opacity: 1;
+}
+
+#go-up i:hover {
     opacity: 1;
     border: solid 1px rgba(255, 255, 255, 0.637);
     color: rgba(255, 255, 255, 0.637);
 }
+
