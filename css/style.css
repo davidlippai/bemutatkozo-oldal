@@ -326,9 +326,7 @@ div#third-topic p {
 img#siluett-profil {
     width: 34%;
     margin: auto 1rem;
-    position: sticky;
     display: block;
-    bottom: 0;
     transition: all ease-in-out 0.5s;
     cursor: pointer;
 }
@@ -339,9 +337,86 @@ img#siluett-profil:hover {
 }
 
 
+/*----------Footer Contact -------------*/
+
+div#fourth-topic {
+    grid-column: 1/13;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#fourth-topic article {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+legend {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    color: rgb(18, 145, 82);
+    animation: vibrating-email 2.5s linear infinite;
+}
 
 
+@keyframes vibrating-email {
+    0% {color: rgb(18, 145, 82);}
+    50% {color: rgb(18, 145, 82);}
+    80% {color: white;}
+}
 
+fieldset {
+    border-top-left-radius: 1rem;
+    border: solid 1px rgba(255, 255, 255, 0.247);
+    border-top-right-radius: 1rem;
+}
+
+article fieldset p {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.25rem;
+}
+
+footer {
+    grid-column: 1/13;
+    background-color: rgba(0, 0, 0, 0.932);
+}
+
+footer p {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+}
+
+div#social-links {
+    display: flex;
+    margin: 1rem auto;
+    font-size: 1.25rem;
+    justify-content: space-evenly;
+}
+
+div#social-links a {
+    padding-bottom: 1rem;
+    text-decoration: none;
+    opacity: 0.5;
+    color:rgb(226, 188, 15);
+    transition: all ease-in-out 0.25s;
+    animation: shining 2.5s linear infinite;
+}
+
+@keyframes shining {
+    0% {color:rgb(226, 188, 15);}
+    50% {color: rgb(238, 206, 63); opacity: 1;}
+}
+
+div#social-links a:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.25s;
+}
+
+/*----------------Go up Arrow ----------------*/
 #go-up {
     position: fixed;
     bottom: 1rem;
