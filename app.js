@@ -11,6 +11,9 @@ $("#hamburgerMenu").click(function(){
   thirdLine.classList.toggle("third-line-animation");
 })
 
+
+
+
 /*name typing*/
 
 let i = 0;
@@ -27,51 +30,17 @@ function typeWriter(){
 
 window.onload = typeWriter;
 
-/*-------------Services--------*/
 
-
-/*$("#first-article").click(function(){
-  $("#first-paragraph").slideToggle("600");
-});
-
-$("#second-article").click(function(){
-  $("#second-paragraph").slideToggle("600");
-});
-
-$("#third-article").click(function(){
-  $("#third-paragraph").slideToggle("600");
-});*/
 
 
 /*------------ Scroll Event | back to the top arrow -----*/
-/*window.addEventListener('scroll', function(){
-  const scrolled = window.scrollY;
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
 
-  console.log(scrollable);
+window.onscroll = function() {visibleArrow()};
 
-  
-})
-
-
-/*------------------Topic Fade in */
-/*const faders = document.querySelectorAll(".fade-in");
-
-const appearOptions = {
-  threshold: 1,
-};
-
-const appearonScroll = new IntersectionObserver(function(entries, appearonScroll){
-  entries.forEach(entry => {
-    if (!entry.isIntersecting){
-      return;
-    } else {
-      entry.target.classList.add('appear');
-      appearonScroll.unobserve(entry.target);
-    }
-  })
-}, appearOptions);
-
-faders.forEach(fader => {
-  appearonScroll.observe(fader);
-})*/
+function visibleArrow() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("go-up").className = "go-up-visible";
+  } else {
+    document.getElementById("go-up").className = "go-up-non-visible";
+  }
+}
