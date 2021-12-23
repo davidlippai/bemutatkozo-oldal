@@ -317,7 +317,6 @@ div#third-topic {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
     font-size: 1.35rem;
     font-family: 'Oooh Baby', cursive;
     background-color: rgba(0, 0, 0, 0.479);
