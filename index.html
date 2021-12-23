@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap"
             rel="stylesheet"
@@ -54,7 +55,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div id="img-card">
+                <div id="img-card" data-aos="fade-in">
                     <img
                         id="profilImg"
                         src="img/davidlippai_profilimg.png"
@@ -65,7 +66,7 @@
             <section>
                 <div id="services">
                     <h2>Services</h2>
-                    <article id="first-article">
+                    <article id="first-article" data-aos="fade-in">
                         <h3>Website building</h3>
                         <p id="first-paragraph">
                             If you ask me, to build a website for you, you will
@@ -74,7 +75,7 @@
                             individual page together.
                         </p>
                     </article>
-                    <article id="second-article">
+                    <article id="second-article" data-aos="fade-in">
                         <h3>Design</h3>
                         <p id="second-paragraph">
                             I'm currently learning as a designer too, I think
@@ -83,7 +84,7 @@
                             for you too.
                         </p>
                     </article>
-                    <article id="third-article">
+                    <article id="third-article" data-aos="fade-in">
                         <h3>Page Managment</h3>
                         <p id="third-paragraph">
                             If you have a page, but you are not satisfied with
@@ -93,7 +94,7 @@
                         </p>
                     </article>
                 </div>
-                <div id="second-topic">
+                <div id="second-topic" data-aos="fade-up">
                     <h2 id="projects">Projects</h2>
                     <article id="first-project">
                         <a href="https://magyarokausztriaban.at/"
@@ -106,7 +107,7 @@
                         >
                     </article>
                 </div>
-                <div id="third-topic">
+                <div id="third-topic" data-aos="fade-up">
                     <h2 id="about-me">About me</h2>
                     <article>
                         <h4>So, Hey again!</h4>
@@ -125,7 +126,7 @@
                     </article>
                     <img
                         id="siluett-profil"
-                        src="img/siluett-gold.png"
+                        src="img/siluett-white.png"
                         alt="profil picture's siluett"
                     />
                 </div>
@@ -150,5 +151,11 @@
         </div>
         <a href="#wrapper" id="go-up"><i class="fas fa-arrow-up"></i></a>
         <script src="app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 1000
+          });
+        </script>
     </body>
 </html>

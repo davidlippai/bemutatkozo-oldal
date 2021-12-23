@@ -37,7 +37,7 @@ header {
     grid-column: 1/13;
     height: auto;
     border-bottom: solid 3px rgb(0, 0, 0);
-    box-shadow: -0.05rem -0.25rem 1.5rem rgba(255, 255, 255, 0.664);
+
 }
 
 div#name-and-hamMenu {
@@ -184,6 +184,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: rgba(0, 0, 0, 0.568);
+    margin-bottom: 0rem;
 }
 
 div#services {
@@ -310,9 +311,13 @@ article#second-project:hover {
 div#third-topic {
     grid-column: 1/13;
     border-top: solid 2px rgba(255, 255, 255, 0.247);
-    border-bottom: solid 2px rgba(255, 255, 255, 0.247);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.767);
     text-align: center;
     letter-spacing: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     font-size: 1.35rem;
     font-family: 'Oooh Baby', cursive;
     background-color: rgba(0, 0, 0, 0.479);
@@ -325,7 +330,7 @@ div#third-topic p {
 
 img#siluett-profil {
     width: 34%;
-    margin: auto 1rem;
+    margin: 0 1rem;
     display: block;
     transition: all ease-in-out 0.5s;
     cursor: pointer;
@@ -400,7 +405,7 @@ div#social-links {
 div#social-links a {
     padding-bottom: 1rem;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.25;
     color:rgb(226, 188, 15);
     transition: all ease-in-out 0.25s;
     animation: shining 2.5s linear infinite;
