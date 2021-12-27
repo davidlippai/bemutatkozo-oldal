@@ -9,8 +9,7 @@ $("#hamburgerMenu").click(function(){
   firstLine.classList.toggle("first-line-animation");
   secondLine.classList.toggle("second-line-animation");
   thirdLine.classList.toggle("third-line-animation");
-})
-
+}) 
 
 
 
