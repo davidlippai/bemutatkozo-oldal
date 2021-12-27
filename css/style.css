@@ -36,10 +36,10 @@ header {
     grid-column: 1/13;
     height: auto;
     border-bottom: solid 1px rgb(255, 255, 255);
-    background: #874BFF;
-    background: -moz-linear-gradient(45deg, #874BFF 0%, #4148D8 100%);
-    background: -webkit-linear-gradient(45deg, #874BFF 0%, #4148D8 100%);
-    background: linear-gradient(45deg, #874BFF 0%, #4148D8 100%);
+    background: #14557B;
+    background: -moz-linear-gradient(top, #14557B 0%, #7FCEC5 100%);
+    background: -webkit-linear-gradient(top, #14557B 0%, #7FCEC5 100%);
+    background: linear-gradient(to bottom, #14557B 0%, #7FCEC5 100%);
 
 }
 
@@ -47,21 +47,21 @@ div#name-and-hamMenu {
     display: flex;
     justify-content: space-between;
     padding: 0.75rem;
-    box-shadow: -0.05rem -0.25rem 1.5rem rgba(255, 255, 255, 0.185);
-    background-color: rgba(196, 196, 196, 0.219);
+    box-shadow: -0.05rem -0.25rem 1.5rem rgb(255, 255, 255);
+    background: #383838b2;
     border-bottom: solid 1px white;
 }
 
 #name-and-hamMenu h1 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.2rem;
     align-self:  center;
     font-family: 'Oooh Baby', cursive;
-    text-shadow:  0.25rem 0.25rem 0.25rem rgb(26, 26, 26);
+    text-shadow:  0.25rem 0.25rem 0.25rem rgba(255, 255, 255, 0.753);
     animation-name: vibrating;
-    animation-duration: 3s;
-    color: #FFF;
+    animation-duration: 2s;
+    color: #ffffff;
 }
 
 @keyframes vibrating {
@@ -128,7 +128,7 @@ span.classOfLines {
     width: 3rem;
     height: 0.25rem;
     transition: all ease-in-out 0.5s;
-    background-color: #ffffff;
+    background-color: #7FCEC5;
 }
 
 #firstLine,
@@ -174,8 +174,11 @@ section {
 
 div#services {
     grid-column: 1/4;
-    background: #ffffffb4;
-    color: #874BFF;
+    background: url('../img/back4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 
@@ -194,7 +197,7 @@ div#services h2 {
     margin: 1rem auto;
     padding: 1rem;
     text-align: center;
-    border: solid 2px rgba(255, 255, 255, 0.863);
+
     display: grid;
     align-self: center;
     opacity: 0.8;
@@ -219,25 +222,20 @@ div#services h2 {
 article#first-article {
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    background: #874BFF;
+    background: #000000a6;
     color: white;
-    background: -moz-linear-gradient(top, #874bff56 0%, #4149d8b7 100%);
-    background: -webkit-linear-gradient(top, #874bff56 0%, #4149d8b0 100%);
-    background: linear-gradient(to bottom, #874bff56 0%, #4149d8c4 100%);
 }
 
 article#second-article {
-    border-top: solid 1px #874BFF;
-    border-bottom: solid 1px #874BFF;
+    color: #14557B;
 }
 
 article#third-article {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
+
+    background: #000000a6;
     color: white;
-    background: -moz-linear-gradient(top, #874bff56 0%, #4149d8b7 100%);
-    background: -webkit-linear-gradient(top, #874bff56 0%, #4149d8b0 100%);
-    background: linear-gradient(to bottom, #874bff56 0%, #4149d8c4 100%);
 }
 
 article#third-article a {
@@ -249,11 +247,13 @@ article#third-article a {
 
 div#second-topic {
     grid-column: 1/13;
-    border-top: solid 2px rgba(255, 255, 255, 0.247);
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgba(0, 0, 0, 0.932);
+    background: url('../img/back2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     
 }
 
@@ -267,7 +267,7 @@ div#second-topic {
 }
 
 #second-topic h2 {
-    color: #874BFF;
+    color: #14557B;
 }
 
 article#first-project, article#second-project {
@@ -276,20 +276,17 @@ article#first-project, article#second-project {
     height: 40vh;
     display: flex;
     transition: all ease-in-out 0.5s;
-    background: #874BFF;
-    background: -moz-linear-gradient(top, #874BFF 0%, #4148D8 100%);
-    background: -webkit-linear-gradient(top, #874BFF 0%, #4148D8 100%);
-    background: linear-gradient(to bottom, #874BFF 0%, #4148D8 100%);
-    border-radius: 1rem;
-
+    background: #14557b8c;
 }
 
 article#first-project:hover {
     border-radius: 1rem;
     transform: rotate(2deg);
     margin-top: -2rem;
-    box-shadow: 0.25rem -0.25rem 1rem rgb(149, 15, 226);
-    transition: all ease-in-out 0.5s;
+    box-shadow: 0.25rem -0.25rem 1rem #7FCEC5;
+    transition: all ease-in-out 0.75s;
+    transform: scale(0.9) rotate(360deg);
+    background: #14557b;
 }
 
 
@@ -298,7 +295,8 @@ article#second-project:hover {
     border-radius: 1rem;
     transform: rotate(-2deg);
     transition: all ease-in-out 0.5s;
-    box-shadow: 0.25rem -0.25rem 1rem rgb(149, 15, 226);
+    box-shadow: 0.25rem -0.25rem 1rem #7FCEC5;
+    background: #14557b;
 }
 
 #second-topic article {
@@ -324,7 +322,6 @@ article#second-project:hover {
 
 div#third-topic {
     grid-column: 1/13;
-    border-top: solid 2px rgba(255, 255, 255, 0.247);
     border-bottom: solid 2px rgba(255, 255, 255, 0.767);
     text-align: center;
     letter-spacing: 0.3rem;
@@ -334,10 +331,10 @@ div#third-topic {
     font-size: 1.35rem;
     font-family: 'Oooh Baby', cursive;
     background-color: rgba(0, 0, 0, 0.479);
-    background: #874BFF;
-    background: -moz-linear-gradient(45deg, #874BFF 0%, #4148D8 100%);
-    background: -webkit-linear-gradient(45deg, #874BFF 0%, #4148D8 100%);
-    background: linear-gradient(45deg, #874BFF 0%, #4148D8 100%);
+    background: #7FCEC5;
+    background: -moz-linear-gradient(top, #7FCEC5 0%, #14557B 100%);
+    background: -webkit-linear-gradient(top, #7FCEC5 0%, #14557B 100%);
+    background: linear-gradient(to bottom, #7FCEC5 0%, #14557B 100%);
 }
 
 div#third-topic p {
@@ -379,14 +376,14 @@ legend {
     font-family: 'Oooh Baby', cursive;
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
-    color: #874BFF;
-    animation: vibrating-email 1s linear infinite;
+    color: #14557B;
+    animation: vibrating-email 6s linear infinite;
 }
 
 
 @keyframes vibrating-email {
-    0% {color: #874BFF;}
-    50% {color: #874BFF;}
+    0% {color: #14557B;}
+    50% {color: #14557B;}
     80% {color: white;}
 }
 
@@ -423,14 +420,14 @@ div#social-links a {
     padding-bottom: 1rem;
     text-decoration: none;
     opacity: 0.25;
-    color:white;
+    color:#7FCEC5;
     transition: all ease-in-out 0.25s;
     animation: shining 2.5s linear infinite;
 }
 
 @keyframes shining {
-    0% {color:white;}
-    50% {color: white; opacity: 0.8;}
+    0% {color:#7FCEC5;}
+    50% {color: #7FCEC5; opacity: 0.8;}
 }
 
 div#social-links a:hover {
