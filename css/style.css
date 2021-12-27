@@ -87,6 +87,7 @@ div#name-and-hamMenu {
 
 img#profilImg {
     width: 60%;
+    max-width: 140px;
     display: block;
     margin: -6rem auto auto auto;
     transition: all ease-in-out 0.3s;
@@ -105,9 +106,6 @@ img#profilImg:hover {
 }
 
 div#img-card {
-    border-top: solid 2px rgb(255, 255, 255);
-    border-left: solid 2px rgb(255, 255, 255);
-    border-right: solid 2px rgb(255, 255, 255);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     width: 60%;
@@ -168,12 +166,12 @@ nav {
 section {
     grid-column: 1/13;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin-bottom: 0rem;
 }
 
 div#services {
-    grid-column: 1/4;
+    grid-column: 1/6;
     background: url('../img/back4.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -281,19 +279,15 @@ article#first-project, article#second-project {
 
 article#first-project:hover {
     border-radius: 1rem;
-    transform: rotate(2deg);
-    margin-top: -2rem;
     box-shadow: 0.25rem -0.25rem 1rem #7FCEC5;
     transition: all ease-in-out 0.75s;
-    transform: scale(0.9) rotate(360deg);
+    transform: scale(0.9);
     background: #14557b;
 }
 
 
 article#second-project:hover {
-    margin-top: -2rem;
     border-radius: 1rem;
-    transform: rotate(-2deg);
     transition: all ease-in-out 0.5s;
     box-shadow: 0.25rem -0.25rem 1rem #7FCEC5;
     background: #14557b;
@@ -470,7 +464,48 @@ div#social-links a:hover {
 
 
 
+/*----------------576px------------------*/
 
+@media (min-width: 576px){
+    div#services {
+        margin: 0 auto;
+        background: #7FCEC5;
+        background: -moz-linear-gradient(top, #7FCEC5 0%, #FFFFFF 100%);
+        background: -webkit-linear-gradient(top, #7FCEC5 0%, #FFFFFF 100%);
+        background: linear-gradient(to bottom, #7FCEC5 0%, #FFFFFF 100%);
+        height: auto;
+    }
+
+    div#services article {
+        width: 65%;
+       
+    }
+
+
+    /*--------SECOND TOPIC | Projects ----------*/
+    div#second-topic {
+        background: #FFFFFF;
+        background: -moz-linear-gradient(top, #FFFFFF 0%, #7FCEC5 100%);
+        background: -webkit-linear-gradient(top, #FFFFFF 0%, #7FCEC5 100%);
+        background: linear-gradient(to bottom, #FFFFFF 0%, #7FCEC5 100%); 
+    }
+
+    div#second-topic article {
+        width: 65%;
+    }
+
+    /*----------THIRD TOPIC | About me ---------------*/
+    div#third-topic article {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    img#siluett-profil {
+        max-width: 200px;
+    }
+
+
+}
 
 
 
@@ -478,7 +513,10 @@ div#social-links a:hover {
 
 /*-----------------768px MEDIA QUERRY--------------------*/
 
-@media (min-width: 768px){
+
+@media (min-width: 769px){
+
+    /*----------HEADER-------*/
     div#hamburgerMenu {
         display: none;
     }
@@ -488,19 +526,77 @@ div#social-links a:hover {
        grid-template-columns: repeat(4, 1fr);
    }
 
+   div#name-and-hamMenu {
+       background: none;
+       box-shadow: none;
+       border: none;
+       font-size: 1.5rem;
+       margin-left: 0.25rem;
+   }
     #name-and-hamMenu {
         grid-column: 1/2;
     }
 
     nav {
         grid-column: 2/4;
-        display: block;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;    
     }
 
     .menu ul {
-       display: flex;
+        display: flex;
        flex-direction: row;
+       width: 100%;
+       justify-content: space-evenly;
     }
 
-    .menu-ul
+    .menu ul li {
+        font-size: 0.8rem;
+    }
+
+    div#services {
+        background: none;
+    }
+
+    div#img-card {
+        border: none;
+        width: 100%;
+    }
+
+    img#profilImg {
+        width: 100%;
+    }
+
+    /*------------SECTION------------------*/ 
+        div#services article {
+            max-width: 700px;
+        }
+    
+}
+
+/*--------------960px - LAPTOP -------*/
+
+    @media (min-width: 960px){
+
+    div#services {
+        grid-column: 1/4;
+    }
+
+    div#second-topic {
+        grid-column: 4/6;
+        background: none;
+        height: auto;
+    }
+
+    .menu ul li {
+        font-size: 1.1rem;
+    }
+
+    #first-project, #second-project {
+        height: auto;
+        max-height: 250px;
+    }
 }
