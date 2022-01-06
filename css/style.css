@@ -277,6 +277,11 @@ article#first-project, article#second-project {
     background: #14557b8c;
 }
 
+article#first-project p, article#second-project p {
+    grid-column: 1/4;
+    padding: 1rem;
+}
+
 article#first-project:hover {
     border-radius: 1rem;
     box-shadow: 0.25rem -0.25rem 1rem #7FCEC5;
